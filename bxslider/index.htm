@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="jquery.bxslider.css">
+</head>
+
+<body>
+    <div class="slider1">
+        <div class="slide">
+            <img src="../images/default/list01.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list02.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list03.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list04.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list03.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list04.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list01.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list02.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list03.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list04.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list03.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list04.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+    </div>
+    <div class="slider4">
+        <div class="slide"><img src="http://placehold.it/300x150&text=FooBar1">
+        </div>
+        <div class="slide"><img src="http://placehold.it/300x150&text=FooBar2">
+        </div>
+        <div class="slide"><img src="http://placehold.it/300x150&text=FooBar3">
+        </div>
+        <div class="slide"><img src="http://placehold.it/300x150&text=FooBar4">
+        </div>
+        <div class="slide"><img src="http://placehold.it/300x150&text=FooBar5">
+        </div>
+        <div class="slide"><img src="http://placehold.it/300x150&text=FooBar6">
+        </div>
+        <div class="slide"><img src="http://placehold.it/300x150&text=FooBar7">
+        </div>
+        <div class="slide"><img src="http://placehold.it/300x150&text=FooBar8">
+        </div>
+        <div class="slide"><img src="http://placehold.it/300x150&text=FooBar9">
+        </div>
+        <div class="slide"><img src="http://placehold.it/300x150&text=FooBar10">
+        </div>
+    </div>
+    <!-- <div id="product-list">
+        <div class="slide">
+            <img src="../images/default/list01.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list02.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list03.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list04.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list03.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list04.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list01.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list02.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list03.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list04.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list03.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+        <div class="slide">
+            <img src="../images/default/list04.jpg">
+            <p>商品名稱</p>
+            <p>價格</p>
+        </div>
+    </div> -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery.bxslider.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.slider1').bxSlider({
+        slideWidth: 200,
+        minSlides: 1,
+        maxSlides: 4,
+        slideMargin: 10
+    });
+    $('.slider4').bxSlider({
+        slideWidth: 300,
+        minSlides: 2,
+        maxSlides: 3,
+        moveSlides: 1,
+        slideMargin: 10
+    });
+    $('#product-list').bxSlider({
+        slideWidth: 300,
+        minSlides: 2,
+        maxSlides: 3,
+        moveSlides: 1,
+        slideMargin: 10
+    });
+});
+</script>
+
+</html>

@@ -1,0 +1,108 @@
+#container #leftNav {
+  float: left;
+  width: 245px;
+  letter-spacing: 5px;
+  margin-top: 65px;
+}
+#container #leftNav .title {
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 700;
+  padding: 0 10px 10px;
+  margin-left: 18px;
+  border-bottom: 1px solid #b1b1b1;
+}
+#container #leftNav .list {
+  margin-left: 40px;
+  margin-top: 25px;
+}
+#container #leftNav .list li ~ li {
+  margin-top: 20px;
+}
+#container #leftNav .list a {
+  color: #000;
+}
+#container #leftNav .list a:hover {
+  color: #ec429a;
+}
+#container #leftNav .list li.active a {
+  color: #ec429a;
+}
+#container #main {
+  float: left;
+  width: 1035px;
+  margin-top: 30px;
+}
+#container #main #product {
+  margin-top: 70px;
+}
+#container #main #product li {
+  width: 331.6666666667px;
+  margin-right: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  height: 384px;
+  margin-bottom: 100px;
+  float: left;
+  text-align: center;
+  font-family: sans-serif;
+}
+#container #main #product li:nth-child(3n) {
+  margin-right: 0;
+}
+#container #main #product li .first-img {
+  z-index: 2;
+  opacity: 1;
+}
+#container #main #product li .last-img {
+  opacity: 0;
+}
+#container #main #product li img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  width: 345px;
+  height: 334px;
+}
+#container #main #product li a:hover img.first-img {
+  opacity: 0;
+}
+#container #main #product li a:hover img.last-img {
+  opacity: 1;
+}
+#container #main #product li .model {
+  margin-top: 333px;
+  font-weight: 700;
+}
+#container #main #product::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+#container #main #pages {
+  text-align: center;
+  margin-top: 50px;
+}
+#container #main #pages li {
+  display: inline-block;
+}
+#container #main #pages a {
+  color: #000;
+}
+#container #main #pages .active {
+  font-size: 20px;
+}
+
+#footer {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1550px) {
+  #wrapper {
+    width: 1550px;
+  }
+}

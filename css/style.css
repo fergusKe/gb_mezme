@@ -1,0 +1,183 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#wrapper {
+  background: url(../images/default/background.jpg);
+  background-size: 100%;
+}
+
+#service {
+  background: #ec429a;
+  height: 28px;
+  line-height: 28px;
+}
+
+.serviceCont {
+  width: 1280px;
+  margin: 0 auto;
+  text-align: right;
+  color: #FFF;
+}
+.serviceCont a {
+  color: #FFF;
+}
+.serviceCont li {
+  display: inline-block;
+}
+.serviceCont li ~ li {
+  margin-left: 35px;
+}
+.serviceCont .favorite {
+  float: left;
+}
+.serviceCont .search input {
+  border-radius: 5px;
+  width: 140px;
+  height: 18px;
+  padding-left: 10px;
+  border: none;
+}
+
+#logo {
+  text-align: center;
+}
+#logo img {
+  width: 200px;
+}
+
+.navCont {
+  text-align: center;
+}
+.navCont > li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.navCont > li:hover > a {
+  color: #ec429a;
+}
+.navCont > li:hover ul {
+  display: block;
+  -webkit-animation: fadeIn 0.5s 0s ease both;
+  -moz-animation: fadeIn 0.5s 0s ease both;
+  -ms-animation: fadeIn 0.5s 0s ease both;
+  -o-animation: fadeIn 0.5s 0s ease both;
+  animation: fadeIn 0.5s 0s ease both;
+}
+.navCont > li ul {
+  position: absolute;
+  width: 100%;
+  background: #f2f2f2;
+  display: none;
+  z-index: 999;
+}
+.navCont > li ul li:hover a {
+  color: #ec429a;
+}
+.navCont a {
+  display: block;
+  padding: 10px 30px;
+  color: #000;
+}
+
+#container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+#container::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+#footer {
+  background: #f2f2f2;
+  background-size: 100% 100%;
+  margin-top: 67px;
+  clear: both;
+}
+#footer .footerCont {
+  width: 1280px;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 14px;
+}
+#footer .item {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  margin-top: -28px;
+}
+#footer .item h3 {
+  font-size: 20px;
+}
+#footer .item ul {
+  margin-top: 30px;
+}
+#footer .item ul li {
+  line-height: 21px;
+}
+#footer .item a {
+  color: #000;
+}
+#footer .item .QRcode {
+  width: 100px;
+}
+#footer .item .fbLike span {
+  float: left;
+}
+#footer .item .fbLike img {
+  width: 60px;
+  float: left;
+}
+#footer .item .fbLike .fbIcon {
+  width: 18px;
+  margin-left: 1px;
+}
+#footer .item.address {
+  float: left;
+}
+#footer .item ~ .item {
+  margin-left: 30px;
+}
+#footer .footerBottom {
+  height: 28px;
+  background: #ec429a;
+  clear: both;
+}
+
+@media screen and (max-width: 1280px) {
+  #wrapper {
+    width: 1280px;
+  }
+}

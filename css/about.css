@@ -1,0 +1,40 @@
+#container #leftNav {
+  float: left;
+  width: 250px;
+  letter-spacing: 5px;
+  margin-top: 65px;
+}
+#container #leftNav .title {
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 700;
+  padding: 0 10px 10px;
+  margin-left: 18px;
+  border-bottom: 1px solid #b1b1b1;
+}
+#container #main {
+  float: left;
+  width: 924px;
+  margin-top: 100px;
+  padding-left: 105px;
+}
+#container #main .mainCont {
+  margin-top: 34px;
+}
+#container #main .mainCont .contWord {
+  line-height: 30px;
+}
+#container #main .mainCont .contImg {
+  margin-top: 30px;
+  font-size: 0;
+}
+#container #main .mainCont .contImg img ~ img {
+  margin-left: 24px;
+}
+#container #main .mainBottom {
+  margin-top: 42px;
+}
+
+#footer {
+  margin-top: 182px;
+}

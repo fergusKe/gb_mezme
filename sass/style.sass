@@ -1,0 +1,117 @@
+@import compass
+@import animate
+#wrapper
+	background: url(../images/default/background.jpg)
+	background-size: 100%
+#service
+	background: #ec429a
+	height: 28px
+	line-height: 28px
+.serviceCont
+	width: 1280px
+	margin: 0 auto
+	text-align: right
+	color: #FFF
+	a
+		color: #FFF
+	li
+		display: inline-block
+	li~li
+		margin-left: 35px
+	.favorite
+		float: left
+	.search input
+		border-radius: 5px
+		width: 140px
+		height: 18px
+		padding-left: 10px
+		border: none
+
+#logo
+	text-align: center
+	img
+		width: 200px
+.navCont
+	text-align: center
+	>li
+		position: relative
+		display: inline-block
+		vertical-align: top
+		&:hover
+			>a
+				color: #ec429a
+			ul
+				display: block
+				+animate(fadeIn, .5s, 0s)
+		ul
+			position: absolute
+			width: 100%
+			background: #f2f2f2
+			display: none
+			z-index: 999
+			li
+				&:hover
+					a
+						color: #ec429a
+	a
+		display: block
+		padding: 10px 30px
+		color: #000
+
+#container
+	width: 1280px
+	margin: 0 auto
+#container::after
+	display: table
+	content: ''
+	clear: both
+
+#footer
+	background: #f2f2f2
+	background-size: 100% 100%
+	margin-top: 67px
+	clear: both
+	.footerCont
+		width: 1280px
+		margin: 0 auto
+		text-align: right
+		font-size: 14px
+	.item
+		display: inline-block
+		text-align: left
+		vertical-align: top
+		margin-top: -28px
+		h3
+			font-size: 20px
+		ul
+			margin-top: 30px
+			li
+				line-height: 21px
+		a
+			color: #000
+		.QRcode
+			width: 100px
+		.fbLike
+			span
+				float: left
+			img
+				width: 60px
+				float: left
+			.fbIcon
+				width: 18px
+				margin-left: 1px
+
+
+	.item.address
+		float: left
+	.item~.item
+		margin-left: 30px
+	.footerBottom
+		height: 28px
+		background: #ec429a
+		clear: both
+
+
+@media screen and (max-width : 1280px)
+	#wrapper
+		width: 1280px

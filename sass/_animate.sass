@@ -1,0 +1,28 @@
+//Animate Mixin Plugin
+
+=animate($name: fadeIn, $duration: 1s, $delay: .2s, $function: ease, $mode: both)
+  +experimental(animation, $name $duration $delay $function $mode)
+
+
+//KeyFrame Defaults (pre-made don't edit)
+
+@-webkit-keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+@-moz-keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+@-ms-keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1

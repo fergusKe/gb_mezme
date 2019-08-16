@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>蜜之米 MEZME</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/member.css">
+</head>
+<body>
+	<div id="wrapper">
+        <div id="header">
+            <div id="service">
+                <ul class="serviceCont">
+                    <li class="favorite"><a href="javascript:;">加入我的最愛</a>
+                    </li>
+                    <li class="search">
+                        <input type="text" placeholder="搜尋" placeholder="Last name">
+                    </li>
+                    <li class="shopping"><a href="javascript:;">我的購物車</a>
+                    </li>
+                    <li class="login"><a href="javascript:;">會員登入</a> / <a href="javascript:;">註冊</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="logo">
+                <a href="index.htm"><img src="images/default/logo.png">
+                </a>
+            </div>
+            <div id="nav">
+                <ul class="navCont">
+                    <li>
+                        <a href="about.htm">品牌概念</a>
+                    </li>
+                    <li>
+                        <a href="news.htm">最新消息</a>
+                    </li>
+                    <li>
+                        <a href="product.htm">商品專區</a>
+                    </li>
+                    <li>
+                        <a href="shop.htm">經銷門市</a>
+                    </li>
+                    <li>
+                        <a href="member.htm">會員專區</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="container">
+        	<div id="leftNav">
+        		<h3 class="title">會員專區</h3>
+                <ul class="list">
+                    <li class="active"><a href="javascript:;">加入會員</a></li>
+                    <li><a href="javascript:;">查詢密碼</a></li>
+                </ul>
+        	</div>
+        	<div id="main">
+                <div id="account">
+                    <div class="title">
+                        <p class="en">CREATE AN ACCOUNT</p>
+                        <div class="dash"></div>
+                        <p>請確實填寫以下會員資料，謝謝。</p>
+                    </div>
+                    <div class="accountCont">
+                        <p>Email Address 電子信箱(會員帳號)</p>
+                        <input class="text" type="text">
+                        <p>Password 輸入密碼</p>
+                        <input class="text" type="text">
+                        <p>Confirm Password 再次確認密碼</p>
+                        <input class="text" type="text">
+                        <p>姓名</p>
+                        <input class="text" type="text">
+                        <p>性別</p>
+                        <input class="radio" type="radio" name="sex" value="male">男&nbsp;&nbsp;&nbsp;
+                        <input class="radio" type="radio" name="sex" value="female">女
+                        <p>行動電話</p>
+                        <input class="text" type="text">
+                        <br>
+                        <input class="button" type="button" value="確認送出">
+                        </div>
+                </div>
+                <div id="loginFB">
+                    <div class="title">
+                        <p class="en">LOGIN TO FACEBOOK</p>
+                        <div class="dash"></div>
+                        <p>使用臉書帳號登入</p>
+                        <div class="loginFBCont">
+                            <a href="javascript:;">
+                                <img src="images/member/fblogin.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        	</div>
+        </div>
+
+
+
+        <div id="footer">
+            <div class="footerCont">
+                <div class="item address">
+                    <h3>MEZ ME</h3>
+                    <ul>
+                        <li>服務時間:週一至週五，AM 9:00 ~ PM 1800，國定假日休息</li>
+                        <li>台中市五權五街188號</li>
+                        <li>客服專線: 04-23755008</li>
+                        <li>蜜之米有限公司 版權所有</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>關於我們</h3>
+                    <ul>
+                        <li><a href="javascript:;">品牌概念</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>會員須知</h3>
+                    <ul>
+                        <li><a href="javascript:;">登入</a> / <a href="javascript:;">註冊</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>Facebook</h3>
+                    <ul>
+                        <li class="QRcode"><img src="images/default/fb_qrcode.jpg" height="344" width="344" alt="">
+                        </li>
+                        <li class="fbLike"><img src="images/default/logo.png"><span>MEZ ME on Facebook</span>
+                            <br><a target="_black" href="https://www.facebook.com/pages/%E8%9C%9C%E4%B9%8B%E7%B1%B3-Mez-me/347656858747910?fref=ts"><img class="fbIcon" src="images/default/Facebook-Icon.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBottom"></div>
+        </div>
+    </div>
+</body>
+<script src="script/jquery.1.9.0.min.js"></script>
+<script>
+    $('#leftNav .list li').click(function() {
+        $('#leftNav .list li.active').removeClass('active');
+        $(this).addClass('active');
+    });
+    $('#pages li').click(function() {
+        $('#pages li.active').removeClass('active');
+        $(this).addClass('active');
+    });
+</script>
+</html>

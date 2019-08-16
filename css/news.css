@@ -1,0 +1,36 @@
+#container #leftNav {
+  float: left;
+  width: 250px;
+  letter-spacing: 5px;
+  margin-top: 65px;
+}
+#container #leftNav .title {
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 700;
+  padding: 0 10px 10px;
+  margin-left: 18px;
+  border-bottom: 1px solid #b1b1b1;
+}
+#container #main {
+  float: left;
+  width: 924px;
+  margin-top: 175px;
+  padding-left: 105px;
+}
+#container #main .news-list ~ .news-list {
+  margin-top: 190px;
+}
+#container #main .date {
+  font-weight: 700;
+}
+#container #main .newsCont {
+  width: 665px;
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid #b1b1b1;
+}
+
+#footer {
+  margin-top: 182px;
+}

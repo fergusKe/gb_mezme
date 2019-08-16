@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>蜜之米 MEZME</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/popups.css">
+</head>
+
+<body>
+    <div class="popups">
+        <div class="popups-mask"></div>
+        <div class="popups-cont">
+            <span class='loginIcon'><img src="images/default/loginIcon.png"></span>
+            <span class="fbLogin">
+				<a href="javascript:;">
+					<img src="images/default/fblcon.png">
+				</a>
+			</span>
+            <div class="divider"></div>
+            <ul class="info">
+                <li class="account">
+                    會員Email / 帳號
+                    <input type="text">
+                </li>
+                <li class="password">
+                    密碼
+                    <input type="text"> <a href="javascript:;">忘記密碼?</a>
+                </li>
+                <li class="note">請注意英文大小寫</li>
+                <li class="check"><span>登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;入</span>
+                </li>
+            </ul>
+            <a class="popups-close" href="javascript:;"></a>
+        </div>
+    </div>
+</body>
+<script src="script/jquery.1.9.0.min.js"></script>
+<script>
+	// 彈出會員登入視窗效果
+    var bounce_in = 0;
+
+    // $('.member_login').click(function() {
+        bounce_in = $('.cont').hasClass('bounce-in');
+        if (!bounce_in) {
+            $('.popups').addClass('active');
+            $('.popups-cont').addClass('bounce-in');
+        }
+    // });
+    $('.popups-close, .popups-mask').click(function() {
+        bounce_in = $('.popups-cont').hasClass('bounce-in');
+        if (bounce_in) {
+            $('.popups-cont').addClass('bounce-out');
+            setTimeout(function() {
+                $('.popups').removeClass('active');
+                $('.popups-cont').removeClass('bounce-in').removeClass('bounce-out');
+            }, 400);
+        }
+    });
+</script>
+</html>

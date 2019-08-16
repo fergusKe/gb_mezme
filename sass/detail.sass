@@ -1,0 +1,131 @@
+// @import compass/css3 
+$width: 1035px
+@mixin grid($cloum_number,$cloum_gutter)
+	width: ($width - $cloum_gutter*($cloum_number - 1) ) / $cloum_number
+	margin-right: $cloum_gutter
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:nth-child(#{$cloum_number}n)
+		margin-right: 0
+#container
+	#leftNav
+		float: left
+		width: 245px
+		letter-spacing: 5px
+		margin-top: 65px
+		.title
+			display: inline-block
+			font-size: 19px
+			font-weight: 700
+			padding: 0 10px 10px
+			margin-left: 18px
+			border-bottom: 1px solid #b1b1b1
+		.list
+			width: 116px
+			text-align: right
+			margin-left: 24px
+			margin-top: 25px
+			li~li
+				margin-top: 20px
+			a
+				color: #000
+				&:hover
+					color: #ec429a
+			li.active a
+				color: #ec429a
+	#main
+		float: left
+		width: $width
+		margin-top: 65px
+		#product
+			position: relative
+			float: left
+			width: 750px
+			text-align: right
+			img
+				width: 723px
+				height: 700px
+			.text
+				position: absolute
+				left: 0
+				bottom: 0
+				height: 320px
+				border-left: 19px solid #f5a1cc
+				text-align: left
+				width: 100%
+				.textCont
+					position: absolute
+					left: 10px
+					bottom: 0
+		#detail::after
+			display: table
+			content: ''
+			clear: both
+		#info
+			position: relative
+			float: left
+			width: 277px
+			.next-prev
+				text-align: right
+				font-size: 20px
+				span
+					position: relative
+					top: -2px
+				a
+					color: #000
+			.banner
+				margin-top: 70px
+				width: 277px
+				height: 18px
+				background: #f5a1cc
+			.fb-like-box
+				position: absolute
+				top: 43px
+				left: 145px
+				overflow: hidden
+				width: 68px
+				height: 20px
+			.list
+				margin-top: 30px
+				z-index: 10
+			.model
+				font-weight: 700
+			.size
+				vertical-align: top
+				ul
+					display: inline-block
+				li
+					float: left
+					width: 30px
+					height: 23px
+					text-align: center
+					cursor: pointer
+					line-height: 23px
+					background: #adadad
+					color: #FFF
+					margin-right: 10px
+			.check
+				width: 113px
+				height: 33px
+				border-radius: 10px
+				background: #e4007f
+				color: #FFF
+				margin-left: 50px
+				text-align: center
+				line-height: 33px
+				cursor: pointer
+		#adPic
+			clear: both
+			margin-top: 290px
+			text-align: center
+			font-size: 24px
+			min-height: 600px
+
+
+#footer
+	margin-top: 80px
+
+@media screen and (max-width : 1550px)
+	#wrapper
+		width: 1550px
